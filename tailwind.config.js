@@ -19,7 +19,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        heading: ["Fredoka", "sans-serif"],
+        heading: ["Cormorant Garamond", "serif"],
         body: ["Inter", "sans-serif"],
       },
     },

@@ -5,32 +5,32 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">🐝</span>
-              <span className="font-heading text-2xl font-bold text-honey-100">
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/logo.svg" alt="Happy Hives" className="w-12 h-12 object-contain brightness-200" />
+              <span className="font-heading text-2xl font-light text-honey-100 tracking-widest uppercase">
                 Happy Hives
               </span>
             </div>
-            <p className="text-honey-100/60 leading-relaxed">
-              Saving the bees one happy hive at a time ◡̈
+            <p className="text-honey-100/60 leading-relaxed italic">
+              Saving the bees one happy hive at a time
             </p>
-            <p className="text-honey-100/40 text-sm mt-2">
-              📍 Missouri Bee Farm
-            </p>
+            <a
+              href="https://www.google.com/maps/place/Cuba,+MO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-honey-100/40 text-sm mt-2 block hover:text-honey-100/70 transition-colors"
+            >
+              📍 Happy Hives — Cuba, MO
+            </a>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-heading text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-heading text-lg font-light tracking-wide uppercase mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#about" className="text-honey-100/60 hover:text-honey-100 transition-colors text-sm">
                   About Us
-                </a>
-              </li>
-              <li>
-                <a href="#products" className="text-honey-100/60 hover:text-honey-100 transition-colors text-sm">
-                  Our Honey
                 </a>
               </li>
               <li>
@@ -48,7 +48,7 @@ export default function Footer() {
 
           {/* Social & Contact */}
           <div>
-            <h3 className="font-heading text-lg font-semibold mb-4">Connect With Us</h3>
+            <h3 className="font-heading text-lg font-light tracking-wide uppercase mb-4">Connect With Us</h3>
             <div className="space-y-3">
               <a
                 href="https://www.instagram.com/happpyhives"
@@ -71,7 +71,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-honey-100/10 mt-12 pt-8 text-center">
           <p className="text-honey-100/40 text-sm">
-            &copy; {new Date().getFullYear()} Happy Hives. All rights reserved. Made with 💛 in Missouri.
+            &copy; {new Date().getFullYear()} Happy Hives. All rights reserved. Made with love in Cuba, Missouri.
           </p>
         </div>
       </div>
