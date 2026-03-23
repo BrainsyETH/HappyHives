@@ -16,7 +16,7 @@ export default function Hero() {
         {/* Logo */}
         <div className="mb-8">
           <img
-            src="/logo.svg"
+            src="/logo.png"
             alt="Happy Hives Logo"
             className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto object-contain"
           />

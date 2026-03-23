@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/logo.svg" alt="Happy Hives" className="w-12 h-12 object-contain brightness-200" />
+              <img src="/logo.png" alt="Happy Hives" className="w-12 h-12 object-contain brightness-200" />
               <span className="font-heading text-2xl font-light text-honey-100 tracking-widest uppercase">
                 Happy Hives
               </span>
