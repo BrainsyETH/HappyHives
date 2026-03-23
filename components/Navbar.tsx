@@ -11,29 +11,26 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <span className="text-2xl">🐝</span>
-            <span className="font-heading text-xl font-semibold text-honey-700">
+            <img src="/logo.svg" alt="Happy Hives" className="w-10 h-10 object-contain" />
+            <span className="font-heading text-xl font-light text-honey-700 tracking-widest uppercase">
               Happy Hives
             </span>
           </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#about" className="text-honey-700/80 hover:text-honey-700 transition-colors text-sm font-medium">
+            <a href="#about" className="text-honey-700/80 hover:text-honey-700 transition-colors text-sm font-medium tracking-wide">
               About
             </a>
-            <a href="#products" className="text-honey-700/80 hover:text-honey-700 transition-colors text-sm font-medium">
-              Products
-            </a>
-            <a href="#instagram" className="text-honey-700/80 hover:text-honey-700 transition-colors text-sm font-medium">
+            <a href="#instagram" className="text-honey-700/80 hover:text-honey-700 transition-colors text-sm font-medium tracking-wide">
               Instagram
             </a>
-            <a href="#contact" className="text-honey-700/80 hover:text-honey-700 transition-colors text-sm font-medium">
+            <a href="#contact" className="text-honey-700/80 hover:text-honey-700 transition-colors text-sm font-medium tracking-wide">
               Contact
             </a>
             <a
               href="#shop"
-              className="bg-honey-500 hover:bg-honey-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors shadow-md shadow-honey-500/25"
+              className="bg-honey-500 hover:bg-honey-600 text-white px-5 py-2 rounded-full text-sm font-medium tracking-wide transition-colors shadow-md shadow-honey-500/25"
             >
               Shop Now
             </a>
@@ -58,21 +55,18 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden pb-4 border-t border-honey-200/50 mt-2 pt-4 flex flex-col gap-3">
-            <a href="#about" onClick={() => setIsOpen(false)} className="text-honey-700/80 hover:text-honey-700 text-sm font-medium">
+            <a href="#about" onClick={() => setIsOpen(false)} className="text-honey-700/80 hover:text-honey-700 text-sm font-medium tracking-wide">
               About
             </a>
-            <a href="#products" onClick={() => setIsOpen(false)} className="text-honey-700/80 hover:text-honey-700 text-sm font-medium">
-              Products
-            </a>
-            <a href="#instagram" onClick={() => setIsOpen(false)} className="text-honey-700/80 hover:text-honey-700 text-sm font-medium">
+            <a href="#instagram" onClick={() => setIsOpen(false)} className="text-honey-700/80 hover:text-honey-700 text-sm font-medium tracking-wide">
               Instagram
             </a>
-            <a href="#contact" onClick={() => setIsOpen(false)} className="text-honey-700/80 hover:text-honey-700 text-sm font-medium">
+            <a href="#contact" onClick={() => setIsOpen(false)} className="text-honey-700/80 hover:text-honey-700 text-sm font-medium tracking-wide">
               Contact
             </a>
             <a
               href="#shop"
-              className="bg-honey-500 hover:bg-honey-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-colors text-center shadow-md"
+              className="bg-honey-500 hover:bg-honey-600 text-white px-5 py-2 rounded-full text-sm font-medium tracking-wide transition-colors text-center shadow-md"
             >
               Shop Now
             </a>

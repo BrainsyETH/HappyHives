@@ -13,19 +13,28 @@ export default function Hero() {
           🍯
         </div>
 
+        {/* Logo */}
+        <div className="mb-8">
+          <img
+            src="/logo.svg"
+            alt="Happy Hives Logo"
+            className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto object-contain"
+          />
+        </div>
+
         {/* Brand name */}
-        <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl font-bold text-honey-700 mb-6 tracking-tight">
+        <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl font-light text-honey-700 mb-6 tracking-widest uppercase">
           Happy Hives
         </h1>
 
         {/* Tagline */}
-        <p className="text-xl sm:text-2xl md:text-3xl text-honey-700/80 font-heading font-normal mb-4">
-          saving the bees one happy hive at a time ◡̈
+        <p className="text-lg sm:text-xl md:text-2xl text-honey-700/80 font-heading font-light mb-4 italic">
+          saving the bees one happy hive at a time
         </p>
 
         {/* Subtitle */}
         <p className="text-base sm:text-lg text-honey-700/60 max-w-xl mx-auto mb-10 leading-relaxed">
-          Fresh, raw honey straight from our Missouri bee farm.
+          Fresh, raw honey straight from our bee farm in Cuba, Missouri.
           Crafted with love by a beekeeping duo passionate about bees and nature.
         </p>
 
@@ -33,25 +42,33 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#shop"
-            className="bg-honey-500 hover:bg-honey-600 text-white px-8 py-3.5 rounded-full text-lg font-heading font-semibold transition-all shadow-lg shadow-honey-500/30 hover:shadow-xl hover:shadow-honey-500/40 hover:-translate-y-0.5"
+            className="bg-honey-500 hover:bg-honey-600 text-white px-8 py-3.5 rounded-full text-lg font-heading font-medium tracking-wide transition-all shadow-lg shadow-honey-500/30 hover:shadow-xl hover:shadow-honey-500/40 hover:-translate-y-0.5"
           >
-            Shop Our Honey 🍯
+            Shop Our Honey
           </a>
           <a
             href="https://www.instagram.com/happpyhives"
             target="_blank"
             rel="noopener noreferrer"
-            className="border-2 border-honey-500/40 hover:border-honey-500 text-honey-700 px-8 py-3.5 rounded-full text-lg font-heading font-medium transition-all hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 border-2 border-honey-500/40 hover:border-honey-500 text-honey-700 px-8 py-3.5 rounded-full text-lg font-heading font-medium tracking-wide transition-all hover:-translate-y-0.5"
           >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
             Follow Our Journey
           </a>
         </div>
 
         {/* Location badge */}
-        <div className="mt-12 inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full text-sm text-honey-700/70">
+        <a
+          href="https://www.google.com/maps/place/Cuba,+MO"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-12 inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full text-sm text-honey-700/70 hover:text-honey-500 transition-colors"
+        >
           <span>📍</span>
-          <span>Missouri Bee Farm</span>
-        </div>
+          <span>Happy Hives — Cuba, MO</span>
+        </a>
       </div>
 
       {/* Wave divider */}
