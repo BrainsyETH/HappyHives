@@ -69,34 +69,6 @@ export default function InstagramFeed() {
           </blockquote>
         </div>
 
-        {/* Additional post embeds in a responsive grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto items-start">
-          {[
-            "https://www.instagram.com/happpyhives/",
-            "https://www.instagram.com/happpyhives/",
-            "https://www.instagram.com/happpyhives/",
-          ].map((url, i) => (
-            <div key={i} className="ig-photo-clip">
-              <blockquote
-                className="instagram-media"
-                data-instgrm-permalink={url}
-                data-instgrm-version="14"
-              >
-                <div style={{ padding: "16px" }}>
-                  <a
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-center text-honey-700/40 py-8 text-sm"
-                  >
-                    View post on Instagram
-                  </a>
-                </div>
-              </blockquote>
-            </div>
-          ))}
-        </div>
-
         {/* CTA */}
         <div className="text-center mt-10">
           <a

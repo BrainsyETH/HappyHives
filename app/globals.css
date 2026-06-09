@@ -35,33 +35,6 @@ body {
   max-width: 100%;
 }
 
-/* Photo-only crop for Instagram post embeds: hide header chrome and caption/action bar */
-.ig-photo-clip {
-  position: relative;
-  width: 100%;
-  max-width: 360px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(74, 55, 40, 0.08);
-  background: #000;
-  aspect-ratio: 9 / 16;
-}
-
-.ig-photo-clip .instagram-media,
-.ig-photo-clip iframe.instagram-media-rendered {
-  position: absolute !important;
-  top: -56px !important;
-  left: 0 !important;
-  width: 100% !important;
-  min-width: 100% !important;
-  max-width: none !important;
-  height: calc(100% + 56px + 220px) !important;
-  margin: 0 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
 
 /* Smooth section transitions */
 section {
