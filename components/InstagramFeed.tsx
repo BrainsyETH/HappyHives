@@ -70,17 +70,7 @@ export default function InstagramFeed() {
         </div>
 
         {/* Additional post embeds in a responsive grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {/*
-            To show specific posts, add their URLs below.
-            Replace these example URLs with real post URLs from @happpyhives.
-
-            To find post URLs:
-            1. Go to instagram.com/happpyhives
-            2. Click on any post
-            3. Copy the URL (e.g. https://www.instagram.com/p/ABC123/)
-            4. Replace the href and data-instgrm-permalink below
-          */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto items-start">
           {[
             "https://www.instagram.com/happpyhives/",
             "https://www.instagram.com/happpyhives/",
@@ -89,7 +79,6 @@ export default function InstagramFeed() {
             <div key={i} className="flex justify-center">
               <blockquote
                 className="instagram-media"
-                data-instgrm-captioned
                 data-instgrm-permalink={url}
                 data-instgrm-version="14"
                 style={{
@@ -134,16 +123,6 @@ export default function InstagramFeed() {
           </a>
         </div>
 
-        {/* Instructions for customization */}
-        <div className="mt-8 bg-honey-200/30 rounded-xl p-6 max-w-2xl mx-auto text-center">
-          <p className="text-honey-700/50 text-sm">
-            <strong>To show your posts here:</strong> Replace the placeholder URLs in{" "}
-            <code className="bg-honey-200/50 px-1.5 py-0.5 rounded text-xs">components/InstagramFeed.tsx</code>{" "}
-            with your real Instagram post URLs (e.g.{" "}
-            <code className="bg-honey-200/50 px-1.5 py-0.5 rounded text-xs">https://www.instagram.com/p/ABC123/</code>).
-            The embeds will automatically show your photos with captions.
-          </p>
-        </div>
       </div>
     </section>
   );

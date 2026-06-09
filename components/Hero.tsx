@@ -18,24 +18,13 @@ export default function Hero() {
           <img
             src="/logo.png"
             alt="Happy Hives Logo"
-            className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto object-contain"
+            className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto object-contain"
           />
         </div>
 
-        {/* Brand name */}
-        <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl font-light text-honey-700 mb-6 tracking-widest uppercase">
-          Happy Hives
-        </h1>
-
-        {/* Tagline */}
-        <p className="text-lg sm:text-xl md:text-2xl text-honey-700/80 font-heading font-light mb-4 italic">
-          saving the bees one happy hive at a time
-        </p>
-
         {/* Subtitle */}
-        <p className="text-base sm:text-lg text-honey-700/60 max-w-xl mx-auto mb-10 leading-relaxed">
-          Fresh, raw honey straight from our bee farm in Cuba, Missouri.
-          Crafted with love by a beekeeping duo passionate about bees and nature.
+        <p className="text-lg sm:text-xl md:text-2xl text-honey-700/80 font-heading font-light max-w-xl mx-auto mb-10 leading-relaxed italic">
+          Fresh honey from our Missouri bees
         </p>
 
         {/* CTAs */}
