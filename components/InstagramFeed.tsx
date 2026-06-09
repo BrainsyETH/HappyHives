@@ -76,22 +76,11 @@ export default function InstagramFeed() {
             "https://www.instagram.com/happpyhives/",
             "https://www.instagram.com/happpyhives/",
           ].map((url, i) => (
-            <div key={i} className="flex justify-center">
+            <div key={i} className="ig-photo-clip">
               <blockquote
                 className="instagram-media"
                 data-instgrm-permalink={url}
                 data-instgrm-version="14"
-                style={{
-                  background: "#FFF",
-                  border: 0,
-                  borderRadius: "12px",
-                  boxShadow: "0 4px 24px rgba(74, 55, 40, 0.08)",
-                  margin: 0,
-                  maxWidth: "540px",
-                  minWidth: "280px",
-                  padding: 0,
-                  width: "100%",
-                }}
               >
                 <div style={{ padding: "16px" }}>
                   <a
