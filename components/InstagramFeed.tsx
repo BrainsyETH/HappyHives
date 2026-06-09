@@ -82,9 +82,9 @@ export default function InstagramFeed() {
             4. Replace the href and data-instgrm-permalink below
           */}
           {[
-            "https://www.instagram.com/happpyhives/",
-            "https://www.instagram.com/happpyhives/",
-            "https://www.instagram.com/happpyhives/",
+            "https://www.instagram.com/p/DTHACL6ERhx/",
+            "https://www.instagram.com/p/DXSNuXIEYnf/",
+            "https://www.instagram.com/p/DJxhYwnRq2q/",
           ].map((url, i) => (
             <div key={i} className="flex justify-center">
               <blockquote
