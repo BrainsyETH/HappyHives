@@ -12,23 +12,14 @@ export default function About() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Instagram Embed */}
+          {/* Story video */}
           <div className="flex justify-center">
-            <blockquote
-              className="instagram-media"
-              data-instgrm-permalink="https://www.instagram.com/happpyhives/"
-              data-instgrm-version="14"
-              style={{
-                background: "#FFF",
-                border: 0,
-                borderRadius: "12px",
-                boxShadow: "0 4px 24px rgba(74, 55, 40, 0.08)",
-                margin: "0 auto",
-                maxWidth: "540px",
-                minWidth: "326px",
-                padding: 0,
-                width: "100%",
-              }}
+            <video
+              src="/our-story.mp4"
+              controls
+              playsInline
+              preload="metadata"
+              className="w-full max-w-[360px] aspect-[9/16] rounded-xl shadow-lg shadow-honey-900/10 bg-black object-cover"
             />
           </div>
 
